@@ -17,6 +17,6 @@
     "react-dom": "17.0.1"
   },
   "stackblitz": {
-    "startCommand": "nodemon backend/server.js  && npm run dev"
+    "startCommand": "nodemon backend/server.js && npm run dev"
   }
 }
