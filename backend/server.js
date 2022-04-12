@@ -14,7 +14,6 @@ app.get('/', (req, res) => {
 });
 
 app.post('/run', (req, res) => {
-  res.set('Access-Control-Allow-Origin', '*');
   const { command } = req.body;
 
   console.log(`[INFO] Running "${command}"`);
