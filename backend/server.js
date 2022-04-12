@@ -1,6 +1,8 @@
 import express from 'express';
 import { exec } from 'child_process';
 
+let obj = {"hello": "hello world"}
+
 const PORT = 4200;
 
 const app = express();
@@ -10,7 +12,7 @@ app.use(express.json());
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-  res.send('Server is ready');
+  res.send(obj);
 });
 
 app.post('/run', (req, res) => {
