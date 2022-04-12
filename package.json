@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "concurrently \"next dev\" \"cd backend && nodemon server.js\"",
     "test": "cd backend && jest --json",
-    "console": "cd backend && Sum.cjs"
+    "console": "cd backend && node Sum.cjs"
   },
   "dependencies": {
     "concurrently": "^7.1.0",
