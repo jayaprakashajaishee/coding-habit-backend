@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "concurrently \"next dev\" \"cd backend && nodemon server.js\""
+    "start": "concurrently \"next dev\" \"cd backend && nodemon server.js\"",
+    "test": "cd backend && jest --json"
   },
   "dependencies": {
     "concurrently": "^7.1.0",
