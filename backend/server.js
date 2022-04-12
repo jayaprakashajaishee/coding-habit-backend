@@ -12,9 +12,6 @@ app.use(express.static('public'));
 app.get('/', (req, res) => {
   res.send('Server is ready');
 });
-app.get('/test', (req, res) => {
-  res.send('The test is sucess');
-});
 
 app.post('/run', (req, res) => {
   const { command } = req.body;
