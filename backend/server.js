@@ -1,7 +1,7 @@
 import express from 'express';
 import { exec } from 'child_process';
 
-let obj = {"hello": "hello world"}
+let obj = { hello: 'hello world' };
 
 const PORT = 4200;
 
@@ -12,10 +12,12 @@ app.use(express.json());
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
+  res.set('Access-Control-Allow-Origin', '*');
   res.send(obj);
 });
 
 app.post('/run', (req, res) => {
+  res.set('Access-Control-Allow-Origin', '*');
   const { command } = req.body;
 
   console.log(`[INFO] Running "${command}"`);
